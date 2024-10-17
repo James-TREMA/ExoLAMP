@@ -1,0 +1,34 @@
+version: '3'
+services:
+  web:
+    image: php:7.4-apache
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "80:80"
+    networks:
+      - lamp-network
+
+  db:
+    image: mysql:5.7
+    command: --skip-grant-tables
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mydb
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - lamp-network
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - lamp-network
+
+volumes:
+  db_data:
+
+networks:
+  lamp-network:
