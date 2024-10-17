@@ -1,4 +1,3 @@
-```markdown
 # Déploiement d'une stack LAMP avec Docker Compose
 
 Ce projet met en place une stack LAMP (Linux, Apache, MySQL, PHP) avec Docker Compose. Il comprend un serveur web Apache avec PHP, une base de données MySQL, ainsi qu'Adminer, une interface web pour gérer la base de données.
@@ -77,8 +76,6 @@ Les données de la base de données sont persistées dans un volume Docker nomm�
 ## Auteur
 
 Projet réalisé par **James-TREMA**.
-
-```
 
 Pour ajouter ce fichier dans ton dépôt, tu peux créer un fichier nommé `README.md` à la racine du projet avec le contenu ci-dessus, puis l'ajouter à Git et le pousser sur GitHub :
 
