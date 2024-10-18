@@ -11,7 +11,6 @@ services:
 
   db:
     image: mysql:5.7
-    command: --skip-grant-tables
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: mydb
